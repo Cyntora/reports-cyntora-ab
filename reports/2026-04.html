@@ -3,26 +3,31 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Cyntora AB - Rapport april 2026</title>
+  <meta name="robots" content="noindex, nofollow">
+  <title>Cyntora AB — Rapport april 2026 | Cyntora</title>
   <link rel="icon" type="image/svg+xml" href="../assets/cyntora-favicon.svg">
   <link rel="apple-touch-icon" href="../assets/cyntora-favicon.svg">
-  <link rel="stylesheet" href="../assets/cyntora-reports.css">
+  <link rel="stylesheet" href="../assets/cyntora-reports-v2.css?v=72c365bd">
   <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.4/dist/chart.umd.min.js" defer></script>
-  <script src="../assets/cyntora-charts.js" defer></script>
-  <script src="../assets/cyntora-reports.js" defer></script>
+  <script src="../assets/cyntora-charts.js?v=3039954c" defer></script>
+  <script src="../assets/cyntora-reports.js?v=8b74aa71" defer></script>
 </head>
 <body>
 
 <nav class="report-nav" data-section-nav>
   <div class="report-nav__inner">
-    <div class="report-nav__group">
-      <label for="section-jump">Sektion:</label>
-      <select id="section-jump" data-section-jump>
-        <option value="">Översikt</option>
-      </select>
+    <div class="report-nav__brand">
+      <img src="../assets/cyntora-logo.svg" alt="Cyntora">
+      <div class="divider"></div>
+      <div class="label">Cyntora AB</div>
     </div>
-    <div class="report-nav__group">
-      <label for="period">Period:</label>
+    <div class="report-nav__links" data-section-links></div>
+    <div class="report-nav__dropdown" data-section-dropdown-wrap>
+      <label for="section-jump">Sektion</label>
+      <select id="section-jump" data-section-jump></select>
+    </div>
+    <div class="report-nav__period">
+      <label for="period">Period</label>
       <select id="period" data-period-switcher data-current="2026-04" data-index-url="index.json" disabled>
         <option value="2026-04.html" selected>April 2026</option>
       </select>
@@ -31,35 +36,37 @@
 </nav>
 
 
-<section class="page cover">
-  <img class="logo" src="../assets/cyntora-logo.svg" alt="Cyntora">
-  <h1>Cyntora AB - Rapport</h1>
-  <p class="month">April 2026</p>
-
-
-  <div class="footer">
-<div class="property">Cyntora AB - GA4</div>  </div>
+<section class="cover" id="cover">
+  <div class="cover__top">
+    <img src="../assets/cyntora-logo-white.svg" alt="Cyntora">
+    <div class="meta">
+      April 2026
+· Rapport    </div>
+  </div>
+  <div class="cover__center">
+    <div class="cover__eyebrow">Cyntora månadsrapport</div>
+    <h1>Cyntora AB</h1>
+      <p class="cover__kicker">Webbplatsen hade 26 unika användare i april 2026, vilket är -62 % jämfört med samma månad förra året.</p>
+<p class="cover__kicker">Trafiken kom i ungefär lika stor del från direktbesök och organisk sökning, och engagemanget var godkänt med en genomsnittlig sessionstid på 91 sekunder och en engagemangsgrad på 63 %. I SE Ranking förbättrades genomsnittspositionen under månaden, från 84 i början av april till 72 i slutet, och 2 av 23 bevakade sökord befinner sig nu i topp 10.</p>  </div>
+  <div class="cover__bottom">
+    <div class="col">
+      <div class="label">Period</div>
+      <div class="val">April 2026</div>
+    </div>
+    <div class="col">
+      <div class="label">Datakällor</div>
+      <div class="val">GA4, SE Ranking</div>
+    </div>
+    <div class="col">
+      <div class="label">Levererat av</div>
+      <div class="val">Cyntora</div>
+    </div>
+  </div>
 </section>
-<section class="page">
-<div class="page-header">
-  <img class="logo" src="../assets/cyntora-logo.svg" alt="Cyntora">
-  <div class="meta">
-    <div class="client">Cyntora AB</div>
-    <div>April 2026</div>
-  </div>
-</div><div class="summary-block">
-  <h2>Sammanfattning av månaden</h2>
-  <p>Webbplatsen hade 26 unika användare i april 2026, vilket är -62 % jämfört med samma månad förra året. Trafiken kom i ungefär lika stor del från direktbesök och organisk sökning, och engagemanget var godkänt med en genomsnittlig sessionstid på 91 sekunder och en engagemangsgrad på 63 %. I SE Ranking förbättrades genomsnittspositionen under månaden, från 84 i början av april till 72 i slutet, och 2 av 23 bevakade sökord befinner sig nu i topp 10.</p>
-</div></section>
 
-<section class="page">
-<div class="page-header">
-  <img class="logo" src="../assets/cyntora-logo.svg" alt="Cyntora">
-  <div class="meta">
-    <div class="client">Cyntora AB</div>
-    <div>April 2026</div>
-  </div>
-</div>  <div class="section" id="section-ga4_overview" data-section-id="ga4_overview" data-section-title="Google Analytics 4">
+<section class="page page--paper">
+  <div class="wrap">
+    <div class="section" id="section-ga4_overview" data-section-id="ga4_overview" data-section-title="Google Analytics 4">
   <div class="section-title">
 <img class="section-title__icon" src="../assets/icons/ga4.svg" alt="">    <span>Google Analytics 4</span>
   </div>
@@ -130,11 +137,32 @@
     <span class="right">
 <span class="value">00:01:31</span>    </span>
   </div>
-  <div class="chart-wrap">
+  <div class="chart-wrap chart-wrap--short">
     <canvas id="ga4-eng-3" data-cyntora='{"format": "duration", "kind": "line", "labels": ["1 Apr", "2 Apr", "3 Apr", "7 Apr", "8 Apr", "9 Apr", "10 Apr", "13 Apr", "15 Apr", "16 Apr", "20 Apr", "22 Apr", "23 Apr", "25 Apr", "27 Apr", "28 Apr", "29 Apr", "30 Apr"], "series": [{"color": "#1f4e4a", "label": "April 2026", "values": [0.0, 6.2, 8.6, 41.7, 210.4, 29.5, 166.0, 320.6, 6.1, 33.0, 11.6, 211.2, 3.7, 50.8, 16.8, 6.7, 27.8, 301.3]}, {"color": "#b9d2cf", "label": "April 2025", "values": [12.0, 88.7, 7.7, 39.5, 41.5, 324.3, 107.8, 431.2, 137.7, 2.3, 0.0, 56.8, 90.2, 56.4, 46.6, 110.7, 12.8, 5.3]}]}'></canvas>
   </div>
 </div></div>
-<div class="card card--note"><div class="card__head"><span class="label"><img src="../assets/icons/ga4.svg" alt="GA4">Conversions</span></div><div class="card__value card__value--big">0</div><div class="card__note">Kanal-attribution för konverteringar saknar data i GA4 för perioden. Detta brukar bero på att inga händelser är flaggade som key event i GA4 admin.</div></div>
+<div class="card-grid"><div class="chart-card">
+  <div class="chart-card__head">
+    <span>New Users</span>
+    <span class="right">
+<span class="value">25</span>        <span class="trend trend--down">59%</span>
+    </span>
+  </div>
+  <div class="chart-wrap chart-wrap--short">
+    <canvas id="ga4-new-users-4" data-cyntora='{"format": "number", "integer": true, "kind": "line", "labels": ["1 Apr", "2 Apr", "3 Apr", "7 Apr", "8 Apr", "9 Apr", "10 Apr", "13 Apr", "15 Apr", "16 Apr", "20 Apr", "22 Apr", "23 Apr", "25 Apr", "27 Apr", "28 Apr", "29 Apr", "30 Apr"], "series": [{"color": "#1f4e4a", "label": "April 2026", "values": [1, 1, 1, 1, 1, 1, 2, 2, 1, 1, 2, 3, 1, 1, 2, 1, 2, 1]}, {"color": "#b9d2cf", "label": "April 2025", "values": [5, 2, 2, 1, 2, 3, 3, 5, 2, 2, 2, 1, 4, 3, 2, 3, 1, 1]}]}'></canvas>
+  </div>
+</div><div class="chart-card">
+  <div class="chart-card__head">
+    <span>Total Users</span>
+    <span class="right">
+<span class="value">26</span>        <span class="trend trend--down">62%</span>
+    </span>
+  </div>
+  <div class="chart-wrap chart-wrap--short">
+    <canvas id="ga4-total-users-5" data-cyntora='{"format": "number", "integer": true, "kind": "line", "labels": ["1 Apr", "2 Apr", "3 Apr", "7 Apr", "8 Apr", "9 Apr", "10 Apr", "13 Apr", "15 Apr", "16 Apr", "20 Apr", "22 Apr", "23 Apr", "25 Apr", "27 Apr", "28 Apr", "29 Apr", "30 Apr"], "series": [{"color": "#1f4e4a", "label": "April 2026", "values": [1, 1, 1, 1, 1, 1, 2, 2, 1, 2, 2, 3, 1, 1, 2, 2, 2, 1]}, {"color": "#b9d2cf", "label": "April 2025", "values": [5, 4, 3, 4, 2, 3, 6, 5, 3, 3, 2, 1, 6, 3, 6, 5, 1, 1]}]}'></canvas>
+  </div>
+</div></div>
+<div class="card card--note"><div class="card__head"><span class="label"><img src="../assets/icons/ga4.svg" alt="GA4">Conversions</span></div><div class="card__value card__value--big">0</div><div class="card__note">Inga händelser är flaggade som key event i GA4 admin för detta property. Flagga relevanta händelser (t.ex. <code>purchase</code>, <code>form_submit</code>, <code>file_download</code>) i GA4 admin → Events → Mark as key event för att aktivera kanal-attribution i kommande rapporter.</div></div>
 <div class="band">Pages</div>
 <div class="data-table-wrap">
 <div class="head">Visar 4 av 4 sidor</div>  <table class="data-table">
@@ -223,20 +251,16 @@
 
 
 
-<div class="takeaway">
+<div class="takeaway takeaway--review">
   <div class="takeaway__label">Sammanfattning</div>
   <p class="takeaway__body">Trafiken landade på 26 användare (-62,3 % jämfört med samma månad förra året) med 27 sessioner (-75,9 % jämfört med samma månad förra året). Strukturella mätvärden: bouncenivån på 37,0 % och engagemangsraten på 63,0 %.</p>
 </div>
 </div>
+  </div>
 </section>
 <section class="page">
-<div class="page-header">
-  <img class="logo" src="../assets/cyntora-logo.svg" alt="Cyntora">
-  <div class="meta">
-    <div class="client">Cyntora AB</div>
-    <div>April 2026</div>
-  </div>
-</div>  <div class="section" id="section-seranking" data-section-id="seranking" data-section-title="SE Ranking">
+  <div class="wrap">
+    <div class="section" id="section-seranking" data-section-id="seranking" data-section-title="SE Ranking">
   <div class="section-title">
 <img class="section-title__icon" src="../assets/icons/seranking.png" alt="">    <span>SE Ranking</span>
   </div>
@@ -255,9 +279,9 @@
     <div class="label">
 <img src="../assets/icons/seranking.png" alt="">      Avg position
     </div>
-      <span class="trend trend--up">2%</span>
+      <span class="trend trend--up">1%</span>
   </div>
-    <div class="card__value card__value--big">79</div>
+    <div class="card__value card__value--big">83</div>
 </div><div class="card">
   <div class="card__head">
     <div class="label">
@@ -283,6 +307,22 @@
     </thead>
     <tbody>
       <tr>
+        <td>sökmotormarknadsföring</td>
+          <td>
+            —
+          </td>
+          <td>
+            —
+          </td>
+          <td>
+            +58
+              <span class="trend delta trend--up">58%</span>
+          </td>
+          <td>
+            170
+          </td>
+      </tr>
+      <tr>
         <td>tiktok annonsering</td>
           <td>
             —
@@ -291,27 +331,11 @@
             —
           </td>
           <td>
-            +4
-              <span class="trend delta trend--up">4%</span>
+            +2
+              <span class="trend delta trend--up">2%</span>
           </td>
           <td>
             90
-          </td>
-      </tr>
-      <tr>
-        <td>seo norrköping</td>
-          <td>
-            —
-          </td>
-          <td>
-            —
-          </td>
-          <td>
-            -13
-              <span class="trend delta trend--down">13%</span>
-          </td>
-          <td>
-            140
           </td>
       </tr>
       <tr>
@@ -323,11 +347,107 @@
             —
           </td>
           <td>
-            -6
-              <span class="trend delta trend--down">6%</span>
+            +1
+              <span class="trend delta trend--up">1%</span>
           </td>
           <td>
             50
+          </td>
+      </tr>
+      <tr>
+        <td>annonsering sociala medier</td>
+          <td>
+            —
+          </td>
+          <td>
+            —
+          </td>
+          <td>
+            -18
+              <span class="trend delta trend--down">18%</span>
+          </td>
+          <td>
+            480
+          </td>
+      </tr>
+      <tr>
+        <td>marknadsföring via sociala medier</td>
+          <td>
+            —
+          </td>
+          <td>
+            —
+          </td>
+          <td>
+            -7
+              <span class="trend delta trend--down">7%</span>
+          </td>
+          <td>
+            70
+          </td>
+      </tr>
+      <tr>
+        <td>seo norrköping</td>
+          <td>
+            —
+          </td>
+          <td>
+            —
+          </td>
+          <td>
+            -3
+              <span class="trend delta trend--down">3%</span>
+          </td>
+          <td>
+            140
+          </td>
+      </tr>
+      <tr>
+        <td>sökmotorannonsering</td>
+          <td>
+            —
+          </td>
+          <td>
+            —
+          </td>
+          <td>
+            -3
+              <span class="trend delta trend--down">3%</span>
+          </td>
+          <td>
+            70
+          </td>
+      </tr>
+      <tr>
+        <td>teknisk seo</td>
+          <td>
+            —
+          </td>
+          <td>
+            —
+          </td>
+          <td>
+            -2
+              <span class="trend delta trend--down">2%</span>
+          </td>
+          <td>
+            210
+          </td>
+      </tr>
+      <tr>
+        <td>SEM-byrå</td>
+          <td>
+            —
+          </td>
+          <td>
+            —
+          </td>
+          <td>
+            -1
+              <span class="trend delta trend--down">1%</span>
+          </td>
+          <td>
+            260
           </td>
       </tr>
       <tr>
@@ -343,81 +463,6 @@
           </td>
           <td>
             90
-          </td>
-      </tr>
-      <tr>
-        <td>marknadsföring via sociala medier</td>
-          <td>
-            —
-          </td>
-          <td>
-            —
-          </td>
-          <td>
-            0
-          </td>
-          <td>
-            70
-          </td>
-      </tr>
-      <tr>
-        <td>sökmotorannonsering</td>
-          <td>
-            —
-          </td>
-          <td>
-            —
-          </td>
-          <td>
-            0
-          </td>
-          <td>
-            70
-          </td>
-      </tr>
-      <tr>
-        <td>teknisk seo</td>
-          <td>
-            —
-          </td>
-          <td>
-            —
-          </td>
-          <td>
-            0
-          </td>
-          <td>
-            210
-          </td>
-      </tr>
-      <tr>
-        <td>sökmotormarknadsföring</td>
-          <td>
-            —
-          </td>
-          <td>
-            —
-          </td>
-          <td>
-            0
-          </td>
-          <td>
-            170
-          </td>
-      </tr>
-      <tr>
-        <td>SEM-byrå</td>
-          <td>
-            —
-          </td>
-          <td>
-            —
-          </td>
-          <td>
-            0
-          </td>
-          <td>
-            260
           </td>
       </tr>
       <tr>
@@ -541,21 +586,6 @@
           </td>
       </tr>
       <tr>
-        <td>annonsering sociala medier</td>
-          <td>
-            —
-          </td>
-          <td>
-            —
-          </td>
-          <td>
-            0
-          </td>
-          <td>
-            480
-          </td>
-      </tr>
-      <tr>
         <td>sökannonsering</td>
           <td>
             —
@@ -635,36 +665,28 @@
 </div>
 
 
-<div class="takeaway">
+<div class="takeaway takeaway--neutral">
   <div class="takeaway__label">Sammanfattning</div>
   <p class="takeaway__body">Av 23 spårade sökord ligger 2 i topp-10, varav 1 i topp-5. Genomsnittspositionen ligger på 79 (förändrad från 81); synlighetsindexet är 0,79 %. 3 sökord klättrade medan 3 backade.</p>
 </div>
 </div>
+  </div>
 </section>
 
-<section class="page">
-<div class="page-header">
-  <img class="logo" src="../assets/cyntora-logo.svg" alt="Cyntora">
-  <div class="meta">
-    <div class="client">Cyntora AB</div>
-    <div>April 2026</div>
+<section class="page page--dark" id="section-next-steps" data-section-id="next-steps" data-section-title="Vad vi gör härnäst">
+  <div class="wrap">
+    <div class="eyebrow">Vad händer härnäst</div>
+    <div class="next-steps">
+      <h2>Vad vi gör härnäst</h2>
+      <ul>
+<li>Vi kommer att analysera varför 'seo norrköping' tappade från position 9 till 22 under april och identifiera om det beror på konkurrentrörelser eller tekniska förändringar.</li><li>Vi kommer att granska on-page-optimeringen för de sökord som ännu inte rankar i topp 30, i synnerhet de med höga sökvolymer som 'seo byrå' (290/mån) och 'annonsering sociala medier' (480/mån).</li><li>Vi kommer att följa upp trafiktappet i GA4 och undersöka om det finns sidor eller kanaler som kan aktiveras för att öka antalet organiska besök under maj.</li><li>Vi kommer att kontrollera internlänkstrukturen på webbplatsen för att stödja rankingutvecklingen för de nyckelord som rör sig uppåt.</li>      </ul>
+    </div>
+    <div class="next-steps next-steps--external">
+      <h2>Detta behöver vi från er</h2>
+      <ul>
+<li>Konfigurera GA4 key events så att leads och konverteringar kan följas upp framåt.</li>      </ul>
+    </div>
   </div>
-</div><div class="next-steps">
-  <h2>Vad vi gör härnäst</h2>
-  <ul>
-      <li>Vi kommer att analysera varför 'seo norrköping' tappade från position 9 till 22 under april och identifiera om det beror på konkurrentrörelser eller tekniska förändringar.</li>
-      <li>Vi kommer att granska on-page-optimeringen för de sökord som ännu inte rankar i topp 30, i synnerhet de med höga sökvolymer som 'seo byrå' (290/mån) och 'annonsering sociala medier' (480/mån).</li>
-      <li>Vi kommer att följa upp trafiktappet i GA4 och undersöka om det finns sidor eller kanaler som kan aktiveras för att öka antalet organiska besök under maj.</li>
-      <li>Vi kommer att kontrollera internlänkstrukturen på webbplatsen för att stödja rankingutvecklingen för de nyckelord som rör sig uppåt.</li>
-  </ul>
-</div>
-
-<div class="next-steps next-steps--external">
-  <h2>Detta behöver vi från er</h2>
-  <ul>
-      <li>Konfigurera GA4 key events så att leads och konverteringar kan följas upp framåt.</li>
-  </ul>
-</div>
 </section>
 
 
